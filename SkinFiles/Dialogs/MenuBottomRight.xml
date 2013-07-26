@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Dialog xmlns:x="http://www.w3.org/2001/XMLSchema-instance" x:type="MediaPortalDialog">
+  <Name>MenuBottomRight</Name>
+  <Id>2015</Id>
+  <Width>879</Width>
+  <Height>584</Height>
+  <PosX>201</PosX>
+  <PosY>68</PosY>
+  <BorderThickness>2,2,2,2</BorderThickness>
+  <CornerRadius>25,25,25,25</CornerRadius>
+  <BackgroundBrush x:type="ColorBrush" Color="#E1121A26" />
+  <BorderBrush />
+  <DialogAnimations>
+    <Animation x:type="Zoom" Condition="WindowOpen" Duration="500" Easing="EaseOut" />
+    <Animation x:type="Zoom" Condition="WindowClose" Duration="500" Easing="EaseIn" From="100" To="0" />
+  </DialogAnimations>
+  <DialogControls>
+    <Control x:type="Rectangle">
+      <Name>Title BG</Name>
+      <Id>1</Id>
+      <Width>854</Width>
+      <Height>75</Height>
+      <PosX>10</PosX>
+      <PosY>10</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <BorderThickness>0,0,0,0</BorderThickness>
+      <CornerRadius>20,20,20,20</CornerRadius>
+      <BackgroundBrush x:type="GradientBrush">
+        <GradientStops>
+          <GradientStop Color="#FF1E2E48" Offset="0" />
+          <GradientStop Color="#FF0C1219" Offset="0.619" />
+        </GradientStops>
+        <Angle>Vertical</Angle>
+      </BackgroundBrush>
+    </Control>
+    <Control x:type="Label">
+      <Name>DialogTitle</Name>
+      <Id>2</Id>
+      <Width>730</Width>
+      <Height>60</Height>
+      <PosX>43</PosX>
+      <PosY>22</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <LabelStyle StyleId="Roboto50 White">
+        <FontSize>20</FontSize>
+      </LabelStyle>
+      <LabelText>#Dialog.Label4</LabelText>
+      <IsScrollingEnabled>false</IsScrollingEnabled>
+      <ScrollSpeed>2</ScrollSpeed>
+      <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+    </Control>
+    <Control x:type="Button">
+      <Name>Close Button</Name>
+      <Id>3</Id>
+      <Width>80</Width>
+      <Height>80</Height>
+      <PosX>779</PosX>
+      <PosY>8</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ButtonStyle>
+        <NoFocusBrush x:type="ImageBrush" Image="\button_close_nofocus.png" Stretch="Fill" />
+        <NoFocusBorderBrush />
+        <FocusBrush x:type="ImageBrush" Image="\button_close_focus.png" Stretch="Fill" />
+        <FocusBorderBrush />
+        <ShadeBrush />
+        <GlossBrush />
+        <EnableLabel>false</EnableLabel>
+        <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+        <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
+        <EnableImage>true</EnableImage>
+      </ButtonStyle>
+      <LabelText>NewButton</LabelText>
+      <Actions>
+        <Action Action="OpenDialog" Param="2015" />
+      </Actions>
+    </Control>
+    <Control x:type="List">
+      <Name>List</Name>
+      <Id>4</Id>
+      <Width>800</Width>
+      <Height>326</Height>
+      <PosX>44</PosX>
+      <PosY>245</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <ListControlStyle StyleId="empty" />
+      <ListType>MediaPortalMenuControl</ListType>
+      <ListLayout>Auto</ListLayout>
+      <VerticalItemStyle>
+        <BorderThickness>1,1,1,1</BorderThickness>
+        <CornerRadius>15,15,15,15</CornerRadius>
+        <NoFocusBrush x:type="GradientBrush">
+          <GradientStops>
+            <GradientStop Color="Transparent" Offset="0.237" />
+            <GradientStop Color="#82000000" Offset="1" />
+          </GradientStops>
+          <Angle>Vertical</Angle>
+        </NoFocusBrush>
+        <NoFocusBorderBrush />
+        <FocusBrush x:type="GradientBrush">
+          <GradientStops>
+            <GradientStop Color="Transparent" Offset="0" />
+            <GradientStop Color="#FF000000" Offset="0.676" />
+          </GradientStops>
+          <Angle>Vertical</Angle>
+        </FocusBrush>
+        <FocusBorderBrush x:type="ColorBrush" Color="#FF00BFFF" />
+        <FontType>Roboto</FontType>
+        <FocusFontBrush x:type="ColorBrush" Color="#FFFFFFFF" />
+        <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
+        <LabelMargin>10,0,0,0</LabelMargin>
+        <ImageMargin>3,3,3,3</ImageMargin>
+        <ImageHorizontalAlignment>Left</ImageHorizontalAlignment>
+        <ImageVerticalAlignment>Top</ImageVerticalAlignment>
+        <ImageCornerRadius>4</ImageCornerRadius>
+        <Width>790</Width>
+        <Height>50</Height>
+        <ItemMargin>2,2,2,2</ItemMargin>
+      </VerticalItemStyle>
+      <HorizontalItemStyle>
+        <BorderThickness>1,1,1,1</BorderThickness>
+        <CornerRadius>4,4,4,4</CornerRadius>
+        <NoFocusBrush x:type="ColorBrush" Color="#FF000000" />
+        <NoFocusBorderBrush x:type="ColorBrush" Color="#FF00BFFF" />
+        <FocusBrush x:type="ColorBrush" Color="#FF00BFFF" />
+        <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+        <FontSize>18</FontSize>
+        <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+        <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
+        <LabelMargin>3,3,3,3</LabelMargin>
+        <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+        <EnableImage>true</EnableImage>
+        <ImageMargin>3,3,3,33</ImageMargin>
+        <ImageVerticalAlignment>Top</ImageVerticalAlignment>
+        <Width>135</Width>
+        <Height>207</Height>
+        <ItemMargin>1,1,1,1</ItemMargin>
+      </HorizontalItemStyle>
+      <CoverFlowItemStyle>
+        <BorderThickness>1,1,1,1</BorderThickness>
+        <CornerRadius>4,4,4,4</CornerRadius>
+        <NoFocusBrush x:type="ColorBrush" Color="#FF000000" />
+        <NoFocusBorderBrush x:type="ColorBrush" Color="#FF00BFFF" />
+        <FocusBrush x:type="ColorBrush" Color="#FF00BFFF" />
+        <FocusBorderBrush x:type="ColorBrush" Color="#FF000000" />
+        <FontSize>18</FontSize>
+        <FocusFontBrush x:type="ColorBrush" Color="#FF000000" />
+        <NoFocusFontBrush x:type="ColorBrush" Color="#FF00BFFF" />
+        <LabelMargin>3,3,3,3</LabelMargin>
+        <LabelVerticalAlignment>Bottom</LabelVerticalAlignment>
+        <EnableImage>true</EnableImage>
+        <ImageMargin>3,3,3,33</ImageMargin>
+        <ImageVerticalAlignment>Top</ImageVerticalAlignment>
+        <Width>135</Width>
+        <Height>207</Height>
+      </CoverFlowItemStyle>
+    </Control>
+    <Control x:type="Label">
+      <Name>TextArea1</Name>
+      <Id>5</Id>
+      <Width>800</Width>
+      <Height>50</Height>
+      <PosX>44</PosX>
+      <PosY>109</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <LabelStyle StyleId="Roboto40 White">
+        <FontSize>20</FontSize>
+      </LabelStyle>
+      <LabelText>#Dialog.Label5</LabelText>
+      <IsScrollingEnabled>false</IsScrollingEnabled>
+      <ScrollSpeed>2</ScrollSpeed>
+      <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+    </Control>
+    <Control x:type="Label">
+      <Name>TextArea2</Name>
+      <Id>6</Id>
+      <Width>800</Width>
+      <Height>50</Height>
+      <PosX>44</PosX>
+      <PosY>170</PosY>
+      <VisibleCondition />
+      <Animations />
+      <MediaPortalFocusControls />
+      <LabelStyle StyleId="Roboto40 White">
+        <FontSize>20</FontSize>
+      </LabelStyle>
+      <LabelText>#Dialog.Label6</LabelText>
+      <IsScrollingEnabled>false</IsScrollingEnabled>
+      <ScrollSpeed>2</ScrollSpeed>
+      <IsScrollWrapEnabled>false</IsScrollWrapEnabled>
+    </Control>
+  </DialogControls>
+  <VisibleCondition>IsMediaPortalDialog(2015)</VisibleCondition>
+</Dialog>
