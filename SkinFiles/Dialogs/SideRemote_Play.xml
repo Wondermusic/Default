@@ -510,7 +510,8 @@
       <Height>80</Height>
       <PosX>5</PosX>
       <PosY>5</PosY>
-      <VisibleCondition />
+      <VisibleCondition>IsPlayer(IsTV)</VisibleCondition>
+      <IsWindowOpenVisible>false</IsWindowOpenVisible>
       <Animations />
       <MediaPortalFocusControls />
       <ButtonStyle>
@@ -545,7 +546,8 @@
       <Height>80</Height>
       <PosX>385</PosX>
       <PosY>5</PosY>
-      <VisibleCondition />
+      <VisibleCondition>IsPlayer(IsTV)</VisibleCondition>
+      <IsWindowOpenVisible>false</IsWindowOpenVisible>
       <Animations />
       <MediaPortalFocusControls />
       <ButtonStyle>
